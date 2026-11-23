@@ -1,0 +1,4450 @@
+{
+  "categories": [
+    "入职",
+    "离职",
+    "转正",
+    "满3个月",
+    "阶段性",
+    "签订合同",
+    "签劳动合同",
+    "满3个月/签订合同"
+  ],
+  "months": [
+    "202111",
+    "202112",
+    "202201",
+    "202202",
+    "202203",
+    "202204",
+    "202205",
+    "202206",
+    "202207",
+    "202208",
+    "202209",
+    "202210",
+    "202211",
+    "202212",
+    "202301",
+    "202302",
+    "202303",
+    "202304",
+    "202305",
+    "202306",
+    "202307",
+    "202308",
+    "202309",
+    "202310",
+    "202311",
+    "202312",
+    "202401",
+    "202402",
+    "202403",
+    "202404",
+    "202405",
+    "202406",
+    "202407",
+    "202408",
+    "202409",
+    "202410",
+    "202411",
+    "202412",
+    "202501",
+    "202502",
+    "202503",
+    "202504",
+    "202505",
+    "202506",
+    "202507",
+    "202508",
+    "202509",
+    "202510",
+    "202511",
+    "202512",
+    "202601",
+    "202602",
+    "202603",
+    "202604",
+    "202605",
+    "202606",
+    "202607",
+    "202608",
+    "202609",
+    "202610"
+  ],
+  "activity": [
+    {
+      "month": "202111",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品部"
+    },
+    {
+      "month": "202111",
+      "category": "入职",
+      "location": "深圳",
+      "department": "人事行政部"
+    },
+    {
+      "month": "202111",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202111",
+      "category": "离职",
+      "location": "深圳",
+      "department": "人事行政部"
+    },
+    {
+      "month": "202112",
+      "category": "入职",
+      "location": "武汉",
+      "department": "业务发展部"
+    },
+    {
+      "month": "202112",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部"
+    },
+    {
+      "month": "202112",
+      "category": "入职",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202112",
+      "category": "入职",
+      "location": "香港",
+      "department": "运营部"
+    },
+    {
+      "month": "202112",
+      "category": "转正",
+      "location": "香港",
+      "department": "运营部"
+    },
+    {
+      "month": "202112",
+      "category": "转正",
+      "location": "武汉",
+      "department": "业务发展部"
+    },
+    {
+      "month": "202112",
+      "category": "转正",
+      "location": "武汉",
+      "department": "人事行政部"
+    },
+    {
+      "month": "202112",
+      "category": "离职",
+      "location": "深圳",
+      "department": "人事行政部"
+    },
+    {
+      "month": "202112",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部"
+    },
+    {
+      "month": "202112",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部"
+    },
+    {
+      "month": "202112",
+      "category": "离职",
+      "location": "深圳",
+      "department": "销售管理部"
+    },
+    {
+      "month": "202112",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部"
+    },
+    {
+      "month": "202112",
+      "category": "离职",
+      "location": "深圳",
+      "department": "业务发展部"
+    },
+    {
+      "month": "202112",
+      "category": "离职",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202112",
+      "category": "离职",
+      "location": "香港",
+      "department": "运营部"
+    },
+    {
+      "month": "202201",
+      "category": "入职",
+      "location": "武汉",
+      "department": "业务发展部"
+    },
+    {
+      "month": "202201",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部"
+    },
+    {
+      "month": "202201",
+      "category": "入职",
+      "location": "深圳",
+      "department": "人事行政部"
+    },
+    {
+      "month": "202201",
+      "category": "入职",
+      "location": "香港",
+      "department": "运营部"
+    },
+    {
+      "month": "202201",
+      "category": "入职",
+      "location": "香港",
+      "department": "运营部"
+    },
+    {
+      "month": "202201",
+      "category": "转正",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202201",
+      "category": "离职",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202201",
+      "category": "离职",
+      "location": "武汉",
+      "department": "人事行政部"
+    },
+    {
+      "month": "202202",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部"
+    },
+    {
+      "month": "202202",
+      "category": "入职",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202202",
+      "category": "入职",
+      "location": "武汉",
+      "department": "人事行政部"
+    },
+    {
+      "month": "202202",
+      "category": "转正",
+      "location": "武汉",
+      "department": "业务发展部"
+    },
+    {
+      "month": "202202",
+      "category": "转正",
+      "location": "深圳",
+      "department": "产品部"
+    },
+    {
+      "month": "202202",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部"
+    },
+    {
+      "month": "202202",
+      "category": "离职",
+      "location": "深圳",
+      "department": "人事行政部"
+    },
+    {
+      "month": "202202",
+      "category": "离职",
+      "location": "武汉",
+      "department": "CMT"
+    },
+    {
+      "month": "202202",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部"
+    },
+    {
+      "month": "202203",
+      "category": "入职",
+      "location": "深圳",
+      "department": "业务发展部"
+    },
+    {
+      "month": "202203",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售一部"
+    },
+    {
+      "month": "202203",
+      "category": "入职",
+      "location": "武汉",
+      "department": "业务发展部"
+    },
+    {
+      "month": "202203",
+      "category": "入职",
+      "location": "深圳",
+      "department": "运营部"
+    },
+    {
+      "month": "202203",
+      "category": "转正",
+      "location": "武汉",
+      "department": "业务发展部"
+    },
+    {
+      "month": "202203",
+      "category": "转正",
+      "location": "武汉",
+      "department": "运营部"
+    },
+    {
+      "month": "202203",
+      "category": "转正",
+      "location": "深圳",
+      "department": "人事行政部"
+    },
+    {
+      "month": "202203",
+      "category": "转正",
+      "location": "香港",
+      "department": "运营部"
+    },
+    {
+      "month": "202203",
+      "category": "转正",
+      "location": "香港",
+      "department": "运营部"
+    },
+    {
+      "month": "202203",
+      "category": "离职",
+      "location": "武汉",
+      "department": "业务发展部"
+    },
+    {
+      "month": "202203",
+      "category": "离职",
+      "location": "深圳",
+      "department": "业务发展部"
+    },
+    {
+      "month": "202203",
+      "category": "离职",
+      "location": "深圳",
+      "department": "产品部"
+    },
+    {
+      "month": "202203",
+      "category": "离职",
+      "location": "武汉",
+      "department": "财务部"
+    },
+    {
+      "month": "202203",
+      "category": "离职",
+      "location": "深圳",
+      "department": "产品管理部"
+    },
+    {
+      "month": "202203",
+      "category": "离职",
+      "location": "武汉",
+      "department": "销售一部"
+    },
+    {
+      "month": "202203",
+      "category": "离职",
+      "location": "武汉",
+      "department": "干训部"
+    },
+    {
+      "month": "202203",
+      "category": "离职",
+      "location": "武汉",
+      "department": "人事行政部"
+    },
+    {
+      "month": "202204",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部"
+    },
+    {
+      "month": "202204",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202204",
+      "category": "入职",
+      "location": "深圳",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202204",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部"
+    },
+    {
+      "month": "202204",
+      "category": "转正",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202204",
+      "category": "转正",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202204",
+      "category": "离职",
+      "location": "深圳",
+      "department": "运营部-商务管理部"
+    },
+    {
+      "month": "202204",
+      "category": "离职",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202205",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202205",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部-企划部"
+    },
+    {
+      "month": "202205",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202205",
+      "category": "入职",
+      "location": "深圳",
+      "department": "运营部-商务管理部"
+    },
+    {
+      "month": "202205",
+      "category": "转正",
+      "location": "深圳",
+      "department": "运营部-销售管理部"
+    },
+    {
+      "month": "202205",
+      "category": "离职",
+      "location": "深圳",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202205",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202205",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202206",
+      "category": "入职",
+      "location": "深圳",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202206",
+      "category": "入职",
+      "location": "深圳",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202206",
+      "category": "签订合同",
+      "location": "深圳",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202206",
+      "category": "签订合同",
+      "location": "深圳",
+      "department": "运营部-商务管理部"
+    },
+    {
+      "month": "202206",
+      "category": "转正",
+      "location": "武汉",
+      "department": "销售一部"
+    },
+    {
+      "month": "202206",
+      "category": "转正",
+      "location": "武汉",
+      "department": "核心产线"
+    },
+    {
+      "month": "202206",
+      "category": "离职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202207",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202207",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202207",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202207",
+      "category": "入职",
+      "location": "深圳",
+      "department": "运营部-销售管理部"
+    },
+    {
+      "month": "202207",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202207",
+      "category": "签订合同",
+      "location": "深圳",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202207",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202207",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部"
+    },
+    {
+      "month": "202207",
+      "category": "转正",
+      "location": "武汉",
+      "department": "综合管理部-企划部"
+    },
+    {
+      "month": "202207",
+      "category": "离职",
+      "location": "深圳",
+      "department": "产品部"
+    },
+    {
+      "month": "202207",
+      "category": "离职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202207",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部"
+    },
+    {
+      "month": "202208",
+      "category": "入职",
+      "location": "武汉",
+      "department": "/"
+    },
+    {
+      "month": "202208",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202208",
+      "category": "入职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202208",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-技术支持部"
+    },
+    {
+      "month": "202208",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202208",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "运营部-商务管理部"
+    },
+    {
+      "month": "202208",
+      "category": "离职",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202209",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202209",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售二部"
+    },
+    {
+      "month": "202209",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "产品部-数据与系统部"
+    },
+    {
+      "month": "202209",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "产品部-半导体集成部"
+    },
+    {
+      "month": "202209",
+      "category": "离职",
+      "location": "深圳",
+      "department": "产品部-数据与系统部"
+    },
+    {
+      "month": "202209",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202210",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202210",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "销售二部"
+    },
+    {
+      "month": "202210",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "业务发展部-核心产线"
+    },
+    {
+      "month": "202210",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202210",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "运营部-销售管理部"
+    },
+    {
+      "month": "202210",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202210",
+      "category": "转正",
+      "location": "深圳",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202210",
+      "category": "转正",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202210",
+      "category": "离职",
+      "location": "武汉",
+      "department": "销售一部"
+    },
+    {
+      "month": "202210",
+      "category": "离职",
+      "location": "武汉",
+      "department": "业务发展部-核心产线"
+    },
+    {
+      "month": "202210",
+      "category": "离职",
+      "location": "武汉",
+      "department": "销售二部"
+    },
+    {
+      "month": "202211",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202211",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-技术支持部"
+    },
+    {
+      "month": "202211",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "/"
+    },
+    {
+      "month": "202211",
+      "category": "转正",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202211",
+      "category": "离职",
+      "location": "深圳",
+      "department": "运营部-商务管理部"
+    },
+    {
+      "month": "202211",
+      "category": "离职",
+      "location": "武汉",
+      "department": "董事办公室"
+    },
+    {
+      "month": "202211",
+      "category": "离职",
+      "location": "武汉",
+      "department": "销售一部"
+    },
+    {
+      "month": "202212",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202212",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "销售二部"
+    },
+    {
+      "month": "202212",
+      "category": "转正",
+      "location": "深圳",
+      "department": "产品部-数据与系统部"
+    },
+    {
+      "month": "202212",
+      "category": "转正",
+      "location": "深圳",
+      "department": "产品部-半导体集成部"
+    },
+    {
+      "month": "202212",
+      "category": "离职",
+      "location": "深圳",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202212",
+      "category": "离职",
+      "location": "武汉",
+      "department": "财务部"
+    },
+    {
+      "month": "202301",
+      "category": "转正",
+      "location": "武汉",
+      "department": "销售二部"
+    },
+    {
+      "month": "202301",
+      "category": "转正",
+      "location": "武汉",
+      "department": "业务发展部-核心业务线"
+    },
+    {
+      "month": "202301",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202301",
+      "category": "转正",
+      "location": "深圳",
+      "department": "运营部-商务管理部"
+    },
+    {
+      "month": "202301",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202301",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-战略发展部"
+    },
+    {
+      "month": "202301",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202301",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202302",
+      "category": "入职",
+      "location": "武汉",
+      "department": "/"
+    },
+    {
+      "month": "202302",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "综合管理部-人事行政部"
+    },
+    {
+      "month": "202302",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部-半导体集成部"
+    },
+    {
+      "month": "202302",
+      "category": "离职",
+      "location": "深圳",
+      "department": "CMT"
+    },
+    {
+      "month": "202302",
+      "category": "离职",
+      "location": "深圳",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202303",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部-销售一部"
+    },
+    {
+      "month": "202303",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部—物流管理部"
+    },
+    {
+      "month": "202303",
+      "category": "转正",
+      "location": "深圳",
+      "department": "产品部-半导体集成部"
+    },
+    {
+      "month": "202303",
+      "category": "转正",
+      "location": "武汉",
+      "department": "销售部-销售二部"
+    },
+    {
+      "month": "202303",
+      "category": "离职",
+      "location": "武汉",
+      "department": "综合管理部-人事行政部"
+    },
+    {
+      "month": "202303",
+      "category": "离职",
+      "location": "深圳",
+      "department": "销售部-销售一部"
+    },
+    {
+      "month": "202303",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202303",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202303",
+      "category": "离职",
+      "location": "武汉",
+      "department": "销售部-销售二部"
+    },
+    {
+      "month": "202303",
+      "category": "离职",
+      "location": "武汉",
+      "department": "销售部-销售二部"
+    },
+    {
+      "month": "202304",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部-销售二部"
+    },
+    {
+      "month": "202304",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品部-半导体集成部"
+    },
+    {
+      "month": "202304",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202305",
+      "category": "入职",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202305",
+      "category": "转正",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202305",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202305",
+      "category": "离职",
+      "location": "深圳",
+      "department": "运营部-销售管理部"
+    },
+    {
+      "month": "202306",
+      "category": "入职",
+      "location": "深圳",
+      "department": "销售部-销售一部"
+    },
+    {
+      "month": "202306",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品部-战略发展部"
+    },
+    {
+      "month": "202306",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品部-半导体集成部"
+    },
+    {
+      "month": "202306",
+      "category": "满3个月/签订合同",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202306",
+      "category": "离职",
+      "location": "深圳",
+      "department": "产品部-半导体集成部"
+    },
+    {
+      "month": "202306",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-商务管理部"
+    },
+    {
+      "month": "202307",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部—物流管理部"
+    },
+    {
+      "month": "202307",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "销售部-销售二部"
+    },
+    {
+      "month": "202307",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "产品部-半导体集成部"
+    },
+    {
+      "month": "202307",
+      "category": "签订合同",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202307",
+      "category": "离职",
+      "location": "香港",
+      "department": "运营部—物流管理部"
+    },
+    {
+      "month": "202307",
+      "category": "离职",
+      "location": "深圳",
+      "department": "运营部—供应管理部"
+    },
+    {
+      "month": "202307",
+      "category": "离职",
+      "location": "深圳",
+      "department": "运营部—商务管理部"
+    },
+    {
+      "month": "202307",
+      "category": "离职",
+      "location": "深圳",
+      "department": "产品部—战略发展部"
+    },
+    {
+      "month": "202308",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部—商务管理部"
+    },
+    {
+      "month": "202308",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部—销售二部"
+    },
+    {
+      "month": "202308",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部—销售一部"
+    },
+    {
+      "month": "202308",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202308",
+      "category": "离职",
+      "location": "武汉",
+      "department": "销售部—销售一部"
+    },
+    {
+      "month": "202308",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部—工业与科研部"
+    },
+    {
+      "month": "202308",
+      "category": "离职",
+      "location": "武汉",
+      "department": "综合管理部"
+    },
+    {
+      "month": "202309",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "销售部-销售一部"
+    },
+    {
+      "month": "202309",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "产品部-战略发展部"
+    },
+    {
+      "month": "202309",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "产品部-半导体集成部"
+    },
+    {
+      "month": "202309",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202309",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-商务管理部"
+    },
+    {
+      "month": "202309",
+      "category": "离职",
+      "location": "武汉",
+      "department": "销售部-销售二部"
+    },
+    {
+      "month": "202309",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202309",
+      "category": "离职",
+      "location": "武汉",
+      "department": "综合管理部-企划部"
+    },
+    {
+      "month": "202309",
+      "category": "离职",
+      "location": "深圳",
+      "department": "销售部-销售一部"
+    },
+    {
+      "month": "202310",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202310",
+      "category": "转正",
+      "location": "深圳",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202310",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202310",
+      "category": "离职",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202310",
+      "category": "离职",
+      "location": "深圳",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202310",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202311",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202311",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202311",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202311",
+      "category": "离职",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202311",
+      "category": "离职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202312",
+      "category": "转正",
+      "location": "深圳",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202312",
+      "category": "转正",
+      "location": "深圳",
+      "department": "产品部-战略发展部"
+    },
+    {
+      "month": "202312",
+      "category": "离职",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202401",
+      "category": "入职",
+      "location": "深圳",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202401",
+      "category": "转正",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202401",
+      "category": "离职",
+      "location": "深圳",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202401",
+      "category": "离职",
+      "location": "深圳",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202402",
+      "category": "入职",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202402",
+      "category": "入职",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202402",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202402",
+      "category": "转正",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202402",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202402",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202403",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202403",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202403",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202403",
+      "category": "离职",
+      "location": "深圳",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202403",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202404",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202404",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202404",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202404",
+      "category": "离职",
+      "location": "深圳",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202404",
+      "category": "离职",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202404",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202404",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202405",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202405",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202405",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202405",
+      "category": "转正",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202405",
+      "category": "转正",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202405",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202406",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202406",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202406",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202406",
+      "category": "离职",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202406",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202407",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202407",
+      "category": "入职",
+      "location": "深圳",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202407",
+      "category": "入职",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202407",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202407",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202407",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202407",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202407",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202407",
+      "category": "入职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202407",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品部-战略发展部"
+    },
+    {
+      "month": "202407",
+      "category": "入职",
+      "location": "深圳",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202407",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202407",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202407",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202407",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202407",
+      "category": "离职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202407",
+      "category": "离职",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202407",
+      "category": "离职",
+      "location": "深圳",
+      "department": "产品部-战略发展部"
+    },
+    {
+      "month": "202407",
+      "category": "离职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202408",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部"
+    },
+    {
+      "month": "202408",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202408",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202408",
+      "category": "转正",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202408",
+      "category": "离职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202409",
+      "category": "入职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202409",
+      "category": "入职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202409",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202409",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202409",
+      "category": "离职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202409",
+      "category": "离职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202410",
+      "category": "入职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202410",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202410",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202410",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202410",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202410",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202410",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202410",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202410",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202410",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202410",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "产品部-业务拓展部"
+    },
+    {
+      "month": "202410",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202410",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202410",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202410",
+      "category": "转正",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202410",
+      "category": "离职",
+      "location": "深圳",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202410",
+      "category": "离职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202411",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202411",
+      "category": "入职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202411",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202411",
+      "category": "转正",
+      "location": "武汉",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202412",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部"
+    },
+    {
+      "month": "202412",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202412",
+      "category": "转正",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202412",
+      "category": "转正",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202412",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202412",
+      "category": "离职",
+      "location": "武汉",
+      "department": "综合管理部"
+    },
+    {
+      "month": "202412",
+      "category": "离职",
+      "location": "深圳",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202501",
+      "category": "转正",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202501",
+      "category": "转正",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202501",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202501",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202501",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202501",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202501",
+      "category": "转正",
+      "location": "武汉",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202501",
+      "category": "转正",
+      "location": "深圳",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202501",
+      "category": "转正",
+      "location": "深圳",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202501",
+      "category": "转正",
+      "location": "深圳",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202501",
+      "category": "转正",
+      "location": "武汉",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202501",
+      "category": "转正",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202501",
+      "category": "离职",
+      "location": "武汉",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202502",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-客户管理部"
+    },
+    {
+      "month": "202502",
+      "category": "入职",
+      "location": "武汉",
+      "department": "运营部-供应管理部"
+    },
+    {
+      "month": "202502",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202502",
+      "category": "入职",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202502",
+      "category": "入职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202502",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202502",
+      "category": "转正",
+      "location": "武汉",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202502",
+      "category": "离职",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202503",
+      "category": "入职",
+      "location": "武汉",
+      "department": "商务部-供应管理部"
+    },
+    {
+      "month": "202503",
+      "category": "入职",
+      "location": "武汉",
+      "department": "商务部-供应管理部"
+    },
+    {
+      "month": "202503",
+      "category": "离职",
+      "location": "深圳",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202503",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202503",
+      "category": "离职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202503",
+      "category": "离职",
+      "location": "武汉",
+      "department": "商务部-供应管理部"
+    },
+    {
+      "month": "202503",
+      "category": "离职",
+      "location": "深圳",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202504",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202504",
+      "category": "入职",
+      "location": "武汉",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202504",
+      "category": "入职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202504",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202504",
+      "category": "入职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202504",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202504",
+      "category": "离职",
+      "location": "武汉",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202504",
+      "category": "离职",
+      "location": "深圳",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202504",
+      "category": "离职",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202505",
+      "category": "入职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202505",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202505",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "商务部-供应管理部"
+    },
+    {
+      "month": "202505",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202505",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202505",
+      "category": "转正",
+      "location": "武汉",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202505",
+      "category": "离职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202505",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202506",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202506",
+      "category": "入职",
+      "location": "深圳",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202506",
+      "category": "入职",
+      "location": "武汉",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202506",
+      "category": "入职",
+      "location": "深圳",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202506",
+      "category": "签订合同",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202506",
+      "category": "签订合同",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202506",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "商务部-供应管理部"
+    },
+    {
+      "month": "202506",
+      "category": "转正",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202507",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202507",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202507",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202507",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202507",
+      "category": "入职",
+      "location": "深圳",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202507",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202507",
+      "category": "入职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202507",
+      "category": "入职",
+      "location": "深圳",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202507",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202507",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202507",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202507",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202507",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202507",
+      "category": "离职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202507",
+      "category": "离职",
+      "location": "武汉",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202507",
+      "category": "离职",
+      "location": "深圳",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202507",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202508",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部"
+    },
+    {
+      "month": "202508",
+      "category": "转正",
+      "location": "武汉",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202508",
+      "category": "转正",
+      "location": "武汉",
+      "department": "商务部-供应管理部"
+    },
+    {
+      "month": "202508",
+      "category": "转正",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202508",
+      "category": "转正",
+      "location": "深圳",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202508",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202508",
+      "category": "离职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202509",
+      "category": "入职",
+      "location": "武汉",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202509",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202509",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202509",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202509",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202509",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202509",
+      "category": "转正",
+      "location": "武汉",
+      "department": "商务部-供应管理部"
+    },
+    {
+      "month": "202509",
+      "category": "离职",
+      "location": "武汉",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202509",
+      "category": "离职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202510",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部"
+    },
+    {
+      "month": "202510",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202510",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202510",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202510",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202510",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202510",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202510",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202510",
+      "category": "转正",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202510",
+      "category": "转正",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202510",
+      "category": "转正",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202510",
+      "category": "离职",
+      "location": "深圳",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202511",
+      "category": "入职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202511",
+      "category": "入职",
+      "location": "武汉",
+      "department": "商务部-供应管理部"
+    },
+    {
+      "month": "202511",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202511",
+      "category": "入职",
+      "location": "深圳",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202511",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "综合管理部"
+    },
+    {
+      "month": "202511",
+      "category": "离职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202511",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202511",
+      "category": "离职",
+      "location": "武汉",
+      "department": "商务部-供应管理部"
+    },
+    {
+      "month": "202512",
+      "category": "入职",
+      "location": "武汉",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202512",
+      "category": "入职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202512",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202512",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202512",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202512",
+      "category": "转正",
+      "location": "深圳",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202512",
+      "category": "转正",
+      "location": "武汉",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202512",
+      "category": "转正",
+      "location": "深圳",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202512",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202601",
+      "category": "入职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202601",
+      "category": "入职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202601",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "综合管理部"
+    },
+    {
+      "month": "202601",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202601",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202601",
+      "category": "转正",
+      "location": "深圳",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202601",
+      "category": "转正",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202601",
+      "category": "转正",
+      "location": "深圳",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202601",
+      "category": "转正",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202602",
+      "category": "入职",
+      "location": "武汉",
+      "department": "商务部-供应管理部"
+    },
+    {
+      "month": "202602",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202602",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202602",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202602",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202602",
+      "category": "转正",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202602",
+      "category": "转正",
+      "location": "武汉",
+      "department": "AD"
+    },
+    {
+      "month": "202603",
+      "category": "入职",
+      "location": "武汉",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202603",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-科研与工业部"
+    },
+    {
+      "month": "202603",
+      "category": "入职",
+      "location": "武汉",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202603",
+      "category": "入职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202603",
+      "category": "入职",
+      "location": "武汉",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202603",
+      "category": "转正",
+      "location": "武汉",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202603",
+      "category": "转正",
+      "location": "武汉",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202603",
+      "category": "离职",
+      "location": "武汉",
+      "department": "商务部-客户管理部"
+    },
+    {
+      "month": "202603",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202603",
+      "category": "离职",
+      "location": "武汉",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202603",
+      "category": "离职",
+      "location": "武汉",
+      "department": "商务部-供应管理部"
+    },
+    {
+      "month": "202603",
+      "category": "离职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202603",
+      "category": "离职",
+      "location": "武汉",
+      "department": "CMT"
+    },
+    {
+      "month": "202604",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202604",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202604",
+      "category": "入职",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202604",
+      "category": "入职",
+      "location": "武汉",
+      "department": "商务部-供应管理部"
+    },
+    {
+      "month": "202604",
+      "category": "入职",
+      "location": "武汉",
+      "department": "财务部"
+    },
+    {
+      "month": "202604",
+      "category": "入职",
+      "location": "深圳",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202604",
+      "category": "入职",
+      "location": "深圳",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202604",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202604",
+      "category": "转正",
+      "location": "香港",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202604",
+      "category": "转正",
+      "location": "武汉",
+      "department": "综合管理部"
+    },
+    {
+      "month": "202604",
+      "category": "离职",
+      "location": "深圳",
+      "department": "综合管理部-行政部"
+    },
+    {
+      "month": "202604",
+      "category": "离职",
+      "location": "武汉",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202605",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品部-业务拓展部"
+    },
+    {
+      "month": "202605",
+      "category": "入职",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202605",
+      "category": "入职",
+      "location": "深圳",
+      "department": "财务部"
+    },
+    {
+      "month": "202605",
+      "category": "入职",
+      "location": "武汉",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202605",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品部-光电材料部"
+    },
+    {
+      "month": "202605",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202605",
+      "category": "入职",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202605",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品部-业务拓展部"
+    },
+    {
+      "month": "202605",
+      "category": "入职",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202605",
+      "category": "入职",
+      "location": "武汉",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202605",
+      "category": "入职",
+      "location": "深圳",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202605",
+      "category": "入职",
+      "location": "深圳",
+      "department": "综合管理部-人事部"
+    },
+    {
+      "month": "202605",
+      "category": "满3个月",
+      "location": "深圳",
+      "department": "产品部-光传输部"
+    },
+    {
+      "month": "202605",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202605",
+      "category": "转正",
+      "location": "武汉",
+      "department": "销售部"
+    },
+    {
+      "month": "202605",
+      "category": "转正",
+      "location": "深圳",
+      "department": "物流管理部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "总经办-行政部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品管理部-采购部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "深圳",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品管理部-采购部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "上海",
+      "department": "运营部-IT部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部-科研工业销售部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售管理部-商务部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "总经办-人事部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品一部-光电器件部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部-销售一部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部-销售三部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "销售部-销售三部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品管理部-采购部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "深圳",
+      "department": "财务中心-财务管理部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品一部-光传输部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "深圳",
+      "department": "销售部-销售一部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "AD"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "总经办-人事部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品一部-设备材料部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品一部-设备材料部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "武汉",
+      "department": "产品一部-光传输部"
+    },
+    {
+      "month": "202606",
+      "category": "入职",
+      "location": "深圳",
+      "department": "产品一部-光传输部"
+    },
+    {
+      "month": "202606",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202606",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "产品二部-科研工业部"
+    },
+    {
+      "month": "202606",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "总经办-行政部"
+    },
+    {
+      "month": "202606",
+      "category": "满3个月",
+      "location": "武汉",
+      "department": "销售管理部-商务部"
+    },
+    {
+      "month": "202606",
+      "category": "转正",
+      "location": "香港",
+      "department": "运营部-物流管理部"
+    },
+    {
+      "month": "202606",
+      "category": "离职",
+      "location": "深圳",
+      "department": "总经办-人事部"
+    },
+    {
+      "month": "202606",
+      "category": "离职",
+      "location": "深圳",
+      "department": "产品一部-光传输部"
+    },
+    {
+      "month": "202606",
+      "category": "离职",
+      "location": "武汉",
+      "department": "总经办-人事部"
+    },
+    {
+      "month": "202606",
+      "category": "离职",
+      "location": "深圳",
+      "department": "销售部-科研工业销售部"
+    },
+    {
+      "month": "202606",
+      "category": "签劳动合同",
+      "location": "武汉",
+      "department": "销售部-销售二部"
+    },
+    {
+      "month": "202606",
+      "category": "签劳动合同",
+      "location": "武汉",
+      "department": "销售部-销售一部"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "香港",
+      "department": "物流管理部-香港仓"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "香港",
+      "department": "物流管理部-香港仓"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "成都",
+      "department": "销售二部"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "苏州",
+      "department": "销售一部"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "武汉",
+      "department": "采购部"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "深圳",
+      "department": "光电器件部"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "武汉",
+      "department": "采购部"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "深圳",
+      "department": "财务管理部"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "武汉",
+      "department": "商务部"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "深圳",
+      "department": "光电器件部"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "武汉",
+      "department": "人事部"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "上海",
+      "department": "战略发展部"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "深圳",
+      "department": "商务部"
+    },
+    {
+      "month": "202607",
+      "category": "入职",
+      "location": "武汉",
+      "department": "财务管理部"
+    },
+    {
+      "month": "202607",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "销售一部"
+    },
+    {
+      "month": "202607",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "科研工业销售部"
+    },
+    {
+      "month": "202607",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "采购部"
+    },
+    {
+      "month": "202607",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "行政部"
+    },
+    {
+      "month": "202607",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "行政部"
+    },
+    {
+      "month": "202607",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "光传输部"
+    },
+    {
+      "month": "202607",
+      "category": "转正",
+      "location": "香港",
+      "department": "物流管理部-香港仓"
+    },
+    {
+      "month": "202607",
+      "category": "离职",
+      "location": "香港",
+      "department": "物流管理部-香港仓"
+    },
+    {
+      "month": "202607",
+      "category": "离职",
+      "location": "深圳",
+      "department": "财务管理部"
+    },
+    {
+      "month": "202607",
+      "category": "离职",
+      "location": "武汉",
+      "department": "财务管理部"
+    },
+    {
+      "month": "202607",
+      "category": "离职",
+      "location": "深圳",
+      "department": "光电器件部"
+    },
+    {
+      "month": "202607",
+      "category": "签劳动合同",
+      "location": "深圳",
+      "department": "科研工业销售部"
+    },
+    {
+      "month": "202608",
+      "category": "入职",
+      "location": "深圳",
+      "department": "采购部"
+    },
+    {
+      "month": "202608",
+      "category": "入职",
+      "location": "深圳",
+      "department": "商务部"
+    },
+    {
+      "month": "202608",
+      "category": "入职",
+      "location": "深圳",
+      "department": "物流管理部-深圳仓"
+    },
+    {
+      "month": "202608",
+      "category": "入职",
+      "location": "深圳",
+      "department": "物流管理部-深圳仓"
+    },
+    {
+      "month": "202608",
+      "category": "入职",
+      "location": "武汉",
+      "department": "行政部"
+    },
+    {
+      "month": "202608",
+      "category": "入职",
+      "location": "深圳",
+      "department": "财务管理部"
+    },
+    {
+      "month": "202608",
+      "category": "入职",
+      "location": "武汉",
+      "department": "科研工业部"
+    },
+    {
+      "month": "202608",
+      "category": "入职",
+      "location": "武汉",
+      "department": "采购部"
+    },
+    {
+      "month": "202608",
+      "category": "入职",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202608",
+      "category": "入职",
+      "location": "武汉",
+      "department": "IT部"
+    },
+    {
+      "month": "202608",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "光电器件部"
+    },
+    {
+      "month": "202608",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "科研工业销售部"
+    },
+    {
+      "month": "202608",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "销售二部"
+    },
+    {
+      "month": "202608",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "资金管理部"
+    },
+    {
+      "month": "202608",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "物流管理部-武汉仓"
+    },
+    {
+      "month": "202608",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "销售三部"
+    },
+    {
+      "month": "202608",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "物流管理部-武汉仓"
+    },
+    {
+      "month": "202608",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "人事部"
+    },
+    {
+      "month": "202608",
+      "category": "转正",
+      "location": "深圳",
+      "department": "光传输部"
+    },
+    {
+      "month": "202608",
+      "category": "转正",
+      "location": "武汉",
+      "department": "销售二部"
+    },
+    {
+      "month": "202608",
+      "category": "转正",
+      "location": "深圳",
+      "department": "设备材料部"
+    },
+    {
+      "month": "202608",
+      "category": "转正",
+      "location": "武汉",
+      "department": "设备材料部"
+    },
+    {
+      "month": "202608",
+      "category": "离职",
+      "location": "深圳",
+      "department": "销售部"
+    },
+    {
+      "month": "202608",
+      "category": "离职",
+      "location": "深圳",
+      "department": "财务管理部"
+    },
+    {
+      "month": "202608",
+      "category": "离职",
+      "location": "深圳",
+      "department": "财务管理部"
+    },
+    {
+      "month": "202608",
+      "category": "离职",
+      "location": "深圳",
+      "department": "物流管理部-深圳仓"
+    },
+    {
+      "month": "202608",
+      "category": "离职",
+      "location": "武汉",
+      "department": "AD"
+    },
+    {
+      "month": "202608",
+      "category": "离职",
+      "location": "武汉",
+      "department": "IT部"
+    },
+    {
+      "month": "202608",
+      "category": "离职",
+      "location": "武汉",
+      "department": "采购部"
+    },
+    {
+      "month": "202608",
+      "category": "离职",
+      "location": "深圳",
+      "department": "设备材料部"
+    },
+    {
+      "month": "202609",
+      "category": "入职",
+      "location": "武汉",
+      "department": "AD"
+    },
+    {
+      "month": "202609",
+      "category": "入职",
+      "location": "深圳",
+      "department": "财务管理部"
+    },
+    {
+      "month": "202609",
+      "category": "入职",
+      "location": "深圳",
+      "department": "财务管理部"
+    },
+    {
+      "month": "202609",
+      "category": "入职",
+      "location": "武汉",
+      "department": "设备材料部"
+    },
+    {
+      "month": "202609",
+      "category": "入职",
+      "location": "武汉",
+      "department": "武汉仓"
+    },
+    {
+      "month": "202609",
+      "category": "入职",
+      "location": "武汉",
+      "department": "人事部"
+    },
+    {
+      "month": "202609",
+      "category": "入职",
+      "location": "武汉",
+      "department": "采购部"
+    },
+    {
+      "month": "202609",
+      "category": "入职",
+      "location": "香港",
+      "department": "香港仓"
+    },
+    {
+      "month": "202609",
+      "category": "入职",
+      "location": "深圳",
+      "department": "IT部"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "行政部"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "采购部"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "深圳仓"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "采购部"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "科研工业销售部"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "光电器件部"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "销售一部"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "销售三部"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "销售三部"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "采购部"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "AD"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "AD"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "人事部"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "设备材料部"
+    },
+    {
+      "month": "202609",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "光传输部"
+    },
+    {
+      "month": "202609",
+      "category": "转正",
+      "location": "武汉",
+      "department": "武汉仓"
+    },
+    {
+      "month": "202609",
+      "category": "转正",
+      "location": "武汉",
+      "department": "科研工业部"
+    },
+    {
+      "month": "202609",
+      "category": "转正",
+      "location": "武汉",
+      "department": "行政部"
+    },
+    {
+      "month": "202609",
+      "category": "转正",
+      "location": "武汉",
+      "department": "光传输部"
+    },
+    {
+      "month": "202609",
+      "category": "转正",
+      "location": "武汉",
+      "department": "商务部"
+    },
+    {
+      "month": "202609",
+      "category": "离职",
+      "location": "武汉",
+      "department": "人事部"
+    },
+    {
+      "month": "202609",
+      "category": "离职",
+      "location": "武汉",
+      "department": "商务部"
+    },
+    {
+      "month": "202609",
+      "category": "离职",
+      "location": "武汉",
+      "department": "战略发展部"
+    },
+    {
+      "month": "202609",
+      "category": "离职",
+      "location": "武汉",
+      "department": "采购部"
+    },
+    {
+      "month": "202610",
+      "category": "入职",
+      "location": "武汉",
+      "department": "IT部"
+    },
+    {
+      "month": "202610",
+      "category": "入职",
+      "location": "深圳",
+      "department": "行政部"
+    },
+    {
+      "month": "202610",
+      "category": "入职",
+      "location": "武汉",
+      "department": "采购部"
+    },
+    {
+      "month": "202610",
+      "category": "入职",
+      "location": "武汉",
+      "department": "科研工业销售部"
+    },
+    {
+      "month": "202610",
+      "category": "入职",
+      "location": "上海",
+      "department": "科研工业销售部"
+    },
+    {
+      "month": "202610",
+      "category": "入职",
+      "location": "武汉",
+      "department": "科研工业部"
+    },
+    {
+      "month": "202610",
+      "category": "入职",
+      "location": "深圳",
+      "department": "资金管理部"
+    },
+    {
+      "month": "202610",
+      "category": "入职",
+      "location": "武汉",
+      "department": "财务管理部"
+    },
+    {
+      "month": "202610",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "光电器件部"
+    },
+    {
+      "month": "202610",
+      "category": "阶段性",
+      "location": "苏州",
+      "department": "销售一部"
+    },
+    {
+      "month": "202610",
+      "category": "阶段性",
+      "location": "成都",
+      "department": "销售二部"
+    },
+    {
+      "month": "202610",
+      "category": "阶段性",
+      "location": "武汉",
+      "department": "商务部"
+    },
+    {
+      "month": "202610",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "光电器件部"
+    },
+    {
+      "month": "202610",
+      "category": "阶段性",
+      "location": "上海",
+      "department": "战略发展部"
+    },
+    {
+      "month": "202610",
+      "category": "阶段性",
+      "location": "深圳",
+      "department": "商务部"
+    },
+    {
+      "month": "202610",
+      "category": "转正",
+      "location": "香港",
+      "department": "香港仓"
+    },
+    {
+      "month": "202610",
+      "category": "转正",
+      "location": "香港",
+      "department": "香港仓"
+    },
+    {
+      "month": "202610",
+      "category": "转正",
+      "location": "武汉",
+      "department": "科研工业销售部"
+    },
+    {
+      "month": "202610",
+      "category": "转正",
+      "location": "武汉",
+      "department": "采购部"
+    },
+    {
+      "month": "202610",
+      "category": "转正",
+      "location": "深圳",
+      "department": "行政部"
+    },
+    {
+      "month": "202610",
+      "category": "转正",
+      "location": "深圳",
+      "department": "行政部"
+    },
+    {
+      "month": "202610",
+      "category": "转正",
+      "location": "武汉",
+      "department": "销售一部"
+    },
+    {
+      "month": "202610",
+      "category": "转正",
+      "location": "武汉",
+      "department": "光传输部"
+    },
+    {
+      "month": "202610",
+      "category": "离职",
+      "location": "武汉",
+      "department": "财务管理部"
+    },
+    {
+      "month": "202610",
+      "category": "离职",
+      "location": "深圳",
+      "department": "资金管理部"
+    },
+    {
+      "month": "202610",
+      "category": "离职",
+      "location": "深圳",
+      "department": "IT部"
+    }
+  ],
+  "transfers": [
+    {
+      "month": "202204",
+      "fromDepartment": "运营部-供应管理部",
+      "toDepartment": "运营部-供应管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202204",
+      "fromDepartment": "运营部-供应管理部",
+      "toDepartment": "运营部-供应管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202204",
+      "fromDepartment": "运营部-物流管理部",
+      "toDepartment": "运营部-物流管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202204",
+      "fromDepartment": "运营部-商务管理部",
+      "toDepartment": "运营部-商务管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202204",
+      "fromDepartment": "运营部-商务管理部",
+      "toDepartment": "运营部-商务管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202204",
+      "fromDepartment": "运营部-物流管理部",
+      "toDepartment": "运营部-物流管理部",
+      "isSwap": false,
+      "isLeft": true,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202204",
+      "fromDepartment": "运营部-供应管理部",
+      "toDepartment": "运营部-供应管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202204",
+      "fromDepartment": "财务部",
+      "toDepartment": "财务部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202209",
+      "fromDepartment": "产品部-科研与工业部",
+      "toDepartment": "产品部-科研与工业部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202209",
+      "fromDepartment": "产品部-科研与工业部",
+      "toDepartment": "产品部-科研与工业部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202209",
+      "fromDepartment": "销售二部",
+      "toDepartment": "销售二部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202209",
+      "fromDepartment": "产品部-科研与工业部",
+      "toDepartment": "业务发展部-核心业务部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202210",
+      "fromDepartment": "销售一部",
+      "toDepartment": "销售一部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202210",
+      "fromDepartment": "销售一部",
+      "toDepartment": "销售一部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202210",
+      "fromDepartment": "销售二部",
+      "toDepartment": "销售二部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202210",
+      "fromDepartment": "业务发展部-核心产线",
+      "toDepartment": "业务发展部-核心产线",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202211",
+      "fromDepartment": "销售一部",
+      "toDepartment": "销售一部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202211",
+      "fromDepartment": "运营部-商务管理部",
+      "toDepartment": "运营部-销售管理部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202211",
+      "fromDepartment": "运营部-销售管理部",
+      "toDepartment": "运营部-商务管理部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202212",
+      "fromDepartment": "产品部-技术支持部",
+      "toDepartment": "业务发展部-核心业务部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202212",
+      "fromDepartment": "销售二部",
+      "toDepartment": "销售二部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "产品部-数据与系统部",
+      "toDepartment": "销售二部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "产品部-光电材料部",
+      "toDepartment": "产品部-光电材料部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "运营部-商务管理部",
+      "toDepartment": "运营部-商务管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "运营部-销售管理部",
+      "toDepartment": "运营部-销售管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "运营部-商务管理部",
+      "toDepartment": "运营部-商务管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "运营部-商务管理部",
+      "toDepartment": "运营部-商务管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "财务部",
+      "toDepartment": "财务部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "运营部-供应管理部",
+      "toDepartment": "运营部-供应管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "运营部-物流管理部",
+      "toDepartment": "运营部-物流管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "运营部-销售管理部",
+      "toDepartment": "运营部-销售管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "运营部-供应管理部",
+      "toDepartment": "运营部-供应管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "运营部-商务管理部",
+      "toDepartment": "运营部-商务管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "产品部-光电材料部",
+      "toDepartment": "产品部-光电材料部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "产品部-光电材料部",
+      "toDepartment": "产品部-光电材料部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "产品部-战略发展部",
+      "toDepartment": "产品部-战略发展部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "产品部-战略发展部",
+      "toDepartment": "产品部-战略发展部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202301",
+      "fromDepartment": "产品部-半导体集成部",
+      "toDepartment": "产品部-半导体集成部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202302",
+      "fromDepartment": "运营部-销售管理部",
+      "toDepartment": "运营部-商务管理部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202302",
+      "fromDepartment": "运营部-商务管理部",
+      "toDepartment": "运营部-销售管理部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202304",
+      "fromDepartment": "产品部-核心业务部",
+      "toDepartment": "产品部-核心业务部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202304",
+      "fromDepartment": "产品部-半导体集成部",
+      "toDepartment": "产品部-半导体集成部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202305",
+      "fromDepartment": "销售部-销售一部",
+      "toDepartment": "产品部-科研与工业部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202307",
+      "fromDepartment": "产品部—工业科研",
+      "toDepartment": "产品部-科研与工业部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202307",
+      "fromDepartment": "销售部—销售二部",
+      "toDepartment": "销售部—销售二部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202310",
+      "fromDepartment": "销售部-销售二部",
+      "toDepartment": "产品部-科研与工业部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202310",
+      "fromDepartment": "产品部-光电材料部",
+      "toDepartment": "销售部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202311",
+      "fromDepartment": "销售部",
+      "toDepartment": "销售部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202407",
+      "fromDepartment": "产品部-光电材料部",
+      "toDepartment": "产品部-光电材料部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202408",
+      "fromDepartment": "销售部",
+      "toDepartment": "销售部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202408",
+      "fromDepartment": "销售部",
+      "toDepartment": "销售部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202408",
+      "fromDepartment": "财务部",
+      "toDepartment": "财务部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202411",
+      "fromDepartment": "产品部-业务拓展部",
+      "toDepartment": "产品部-光电材料部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202411",
+      "fromDepartment": "产品部-业务拓展部",
+      "toDepartment": "产品部-科研与工业部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202412",
+      "fromDepartment": "产品部-科研与工业部",
+      "toDepartment": "销售部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202412",
+      "fromDepartment": "产品部-科研与工业部",
+      "toDepartment": "销售部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202412",
+      "fromDepartment": "运营部-客户管理部",
+      "toDepartment": "综合管理部-行政部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202412",
+      "fromDepartment": "运营部-物流管理部",
+      "toDepartment": "运营部-物流管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202412",
+      "fromDepartment": "运营部-客户管理部",
+      "toDepartment": "运营部-客户管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202412",
+      "fromDepartment": "综合管理部-行政部",
+      "toDepartment": "综合管理部-行政部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202412",
+      "fromDepartment": "产品部-光电材料部",
+      "toDepartment": "产品部-光电材料部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202412",
+      "fromDepartment": "综合管理部-行政部",
+      "toDepartment": "综合管理部-行政部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202412",
+      "fromDepartment": "产品部-科研与工业部",
+      "toDepartment": "产品部-科研与工业部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202412",
+      "fromDepartment": "财务部",
+      "toDepartment": "财务部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202501",
+      "fromDepartment": "产品部-科研与工业部",
+      "toDepartment": "产品部-光传输部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202502",
+      "fromDepartment": "运营部-客户管理部",
+      "toDepartment": "综合管理部-人事部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202511",
+      "fromDepartment": "产品部-光电材料部",
+      "toDepartment": "产品部-光电材料部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202511",
+      "fromDepartment": "产品部-光电材料部",
+      "toDepartment": "产品部-光电材料部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202511",
+      "fromDepartment": "商务部-供应管理部",
+      "toDepartment": "商务部-供应管理部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202511",
+      "fromDepartment": "销售部",
+      "toDepartment": "销售部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202511",
+      "fromDepartment": "产品部-科研与工业部",
+      "toDepartment": "产品部-科研与工业部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202601",
+      "fromDepartment": "产品部-科研与工业部",
+      "toDepartment": "产品部-科研与工业部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202602",
+      "fromDepartment": "综合管理部-行政部",
+      "toDepartment": "行政部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202605",
+      "fromDepartment": "综合管理部-行政部",
+      "toDepartment": "综合管理部-行政部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202606",
+      "fromDepartment": "销售部",
+      "toDepartment": "战略发展部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202607",
+      "fromDepartment": "销售部",
+      "toDepartment": "销售一部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202607",
+      "fromDepartment": "AD",
+      "toDepartment": "AD",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202607",
+      "fromDepartment": "财务部",
+      "toDepartment": "财务中心",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202607",
+      "fromDepartment": "销售部",
+      "toDepartment": "销售二部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202607",
+      "fromDepartment": "光传输部",
+      "toDepartment": "光传输部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202607",
+      "fromDepartment": "业务拓展部",
+      "toDepartment": "业务拓展部兼设备材料部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202607",
+      "fromDepartment": "销售部",
+      "toDepartment": "战略发展部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202607",
+      "fromDepartment": "CMT",
+      "toDepartment": "CMT",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202607",
+      "fromDepartment": "产品部",
+      "toDepartment": "产品一部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202607",
+      "fromDepartment": "客户管理部",
+      "toDepartment": "商务部",
+      "isSwap": true,
+      "isLeft": false,
+      "isDepartmentFlow": false
+    },
+    {
+      "month": "202609",
+      "fromDepartment": "科研工业销售部",
+      "toDepartment": "销售三部",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202610",
+      "fromDepartment": "光传输部",
+      "toDepartment": "AD",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    },
+    {
+      "month": "202610",
+      "fromDepartment": "销售三部",
+      "toDepartment": "AD",
+      "isSwap": false,
+      "isLeft": false,
+      "isDepartmentFlow": true
+    }
+  ],
+  "transferStats": {
+    "total": 88,
+    "swaps": 57,
+    "departmentFlows": 22,
+    "departedExcluded": 1,
+    "sameDepartmentExcluded": 8,
+    "invalidMonth": 0
+  }
+}

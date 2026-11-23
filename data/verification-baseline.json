@@ -1,0 +1,20 @@
+{
+  "firstMonth": "202111",
+  "lastMonth": "202610",
+  "recentStart": "202511",
+  "monthCount": 60,
+  "activityRecords": 610,
+  "transferRecords": 88,
+  "swaps": 57,
+  "departmentFlows": 22,
+  "categories": {
+    "入职": [220, 99],
+    "离职": [161, 35],
+    "转正": [107, 36],
+    "满3个月": [76, 13],
+    "阶段性": [36, 36],
+    "签订合同": [6, 0],
+    "签劳动合同": [3, 3],
+    "满3个月/签订合同": [1, 0]
+  }
+}

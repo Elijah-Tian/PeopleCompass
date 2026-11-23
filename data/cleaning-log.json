@@ -1,0 +1,68 @@
+{
+  "sourceFile": "每月人员异动表202610.xlsx",
+  "generatedAt": "2026-11-23T15:20:24.123Z",
+  "originalPreserved": true,
+  "sheets": {
+    "入转离": {
+      "sourceRecords": 610,
+      "usableRecords": 610,
+      "sourceFields": 12
+    },
+    "调动": {
+      "sourceRecords": 88,
+      "usableRecords": 88,
+      "sourceFields": 8
+    }
+  },
+  "cleaning": {
+    "monthDownFills": 0,
+    "categoryDownFills": 0,
+    "trimmedCategoryValues": 1,
+    "blankCategoryBeforeFill": 0,
+    "namesAndExactDatesDroppedFromAppData": true,
+    "downFillFields": [
+      "月份",
+      "类别"
+    ]
+  },
+  "validation": {
+    "monthCount": 60,
+    "firstMonth": "202111",
+    "lastMonth": "202610",
+    "categoryTotals": {
+      "入职": 220,
+      "离职": 161,
+      "转正": 107,
+      "满3个月": 76,
+      "阶段性": 36,
+      "签订合同": 6,
+      "签劳动合同": 3,
+      "满3个月/签订合同": 1
+    },
+    "recentTwelveMonthTotals": {
+      "入职": 99,
+      "离职": 35,
+      "转正": 36,
+      "满3个月": 13,
+      "阶段性": 36,
+      "签订合同": 0,
+      "签劳动合同": 3,
+      "满3个月/签订合同": 0
+    },
+    "transferStats": {
+      "total": 88,
+      "swaps": 57,
+      "departmentFlows": 22,
+      "departedExcluded": 1,
+      "sameDepartmentExcluded": 8,
+      "invalidMonth": 0
+    }
+  },
+  "rules": [
+    "换签不计入部门调入、调出，单独统计。",
+    "原部门与现部门不同，且不是换签、不是已离职，才计入部门流动。",
+    "类别 trim 首尾空格，离职 空格归入离职。",
+    "仅对月份、类别向下填充。",
+    "异动事件按记录统计，不称为去重员工人数。"
+  ]
+}
