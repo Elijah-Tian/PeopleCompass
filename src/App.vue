@@ -6,6 +6,7 @@ import { GridComponent, TooltipComponent } from 'echarts/components'
 import { CanvasRenderer } from 'echarts/renderers'
 import type { EChartsType } from 'echarts/core'
 import data from './data/processed.json'
+import PanelCard from './components/PanelCard.vue'
 
 echarts.use([LineChart, GridComponent, TooltipComponent, CanvasRenderer])
 
@@ -20,14 +21,20 @@ const periodStart = ref(months.length > 12 ? months[months.length - 12] : months
 const periodEnd = ref(months.at(-1) ?? '')
 const selectedLocation = ref('全部地点')
 const selectedDepartment = ref('全部部门')
+const allDepartments = [...new Set(allActivities.map((row) => row.department).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'zh-CN'))
+const defaultChartDepartments = allDepartments.filter((department) => department !== '/').slice(0, 5)
+const selectedChartDepartments = ref([...defaultChartDepartments])
+const draftChartDepartments = ref([...selectedChartDepartments.value])
+const showDepartmentPicker = ref(false)
 const selectedSeries = ref([...visibleCategories])
+const selectedMetricCategory = ref<string | null>(null)
 const chartElement = ref<HTMLDivElement | null>(null)
 const showQuality = ref(false)
 let chart: EChartsType | null = null
 let resizeObserver: ResizeObserver | null = null
 
 const locations = computed(() => ['全部地点', ...new Set(allActivities.map((row) => row.location).filter(Boolean).sort())])
-const departments = computed(() => ['全部部门', ...new Set(allActivities.map((row) => row.department).filter(Boolean).sort((a, b) => a.localeCompare(b, 'zh-CN')))])
+const departments = computed(() => ['全部部门', ...allDepartments])
 const selectedActivities = computed(() => allActivities.filter((row) =>
   row.month >= periodStart.value && row.month <= periodEnd.value &&
   visibleCategories.includes(row.category) &&
@@ -48,23 +55,58 @@ function toggleSeries(category: string) {
     ? selectedSeries.value.filter((item) => item !== category)
     : visibleCategories.filter((item) => selectedSeries.value.includes(item) || item === category)
 }
+function toggleMetric(category: string) {
+  selectedMetricCategory.value = selectedMetricCategory.value === category ? null : category
+}
+function toggleChartDepartment(department: string) {
+  const isSelected = selectedChartDepartments.value.includes(department)
+  selectedChartDepartments.value = isSelected
+    ? selectedChartDepartments.value.filter((item) => item !== department)
+    : allDepartments.filter((item) => selectedChartDepartments.value.includes(item) || item === department)
+  draftChartDepartments.value = isSelected
+    ? draftChartDepartments.value.filter((item) => item !== department)
+    : allDepartments.filter((item) => draftChartDepartments.value.includes(item) || item === department)
+}
+function toggleDraftChartDepartment(department: string) {
+  draftChartDepartments.value = draftChartDepartments.value.includes(department)
+    ? draftChartDepartments.value.filter((item) => item !== department)
+    : allDepartments.filter((item) => draftChartDepartments.value.includes(item) || item === department)
+}
+function openDepartmentPicker() {
+  draftChartDepartments.value = [...selectedChartDepartments.value]
+  showDepartmentPicker.value = true
+}
+function cancelDepartmentPicker() {
+  draftChartDepartments.value = [...selectedChartDepartments.value]
+  showDepartmentPicker.value = false
+}
+function applyDepartmentPicker() {
+  selectedChartDepartments.value = [...draftChartDepartments.value]
+  showDepartmentPicker.value = false
+}
+function departmentColor(index: number) {
+  return `hsl(${Math.round((index * 137.508) % 360)} 62% 47%)`
+}
+const chartSeriesNames = computed(() => selectedMetricCategory.value
+  ? allDepartments.filter((department) => selectedChartDepartments.value.includes(department))
+  : visibleCategories.filter(isSeriesSelected))
 const trendOption = computed(() => ({
   animationDuration: 500,
-  color: ['#356df3', '#ef766a', '#17a98c', '#f1a440'],
+  color: selectedMetricCategory.value ? chartSeriesNames.value.map((_, index) => departmentColor(index)) : ['#356df3', '#ef766a', '#17a98c', '#f1a440'],
   tooltip: { trigger: 'axis', backgroundColor: '#fff', borderColor: '#e6eaf1', textStyle: { color: '#27344a' }, valueFormatter: (value: number) => `${value} 次` },
   legend: { show: false },
   grid: { left: 36, right: 18, top: 18, bottom: 28 },
   xAxis: { type: 'category', boundaryGap: false, data: visibleMonths.value.map((month) => `${month.slice(0, 4)}-${month.slice(4)}`), axisLine: { lineStyle: { color: '#e9edf4' } }, axisTick: { show: false }, axisLabel: { color: '#8993a4', fontSize: 10, hideOverlap: true } },
   yAxis: { type: 'value', minInterval: 1, splitLine: { lineStyle: { color: '#edf0f5', type: 'dashed' } }, axisLabel: { color: '#98a1af', fontSize: 10 } },
-  series: visibleCategories.filter(isSeriesSelected).map((category) => ({
-    name: category,
+  series: chartSeriesNames.value.map((name) => ({
+    name,
     type: 'line',
     smooth: 0.25,
     showSymbol: false,
     symbolSize: 6,
-    emphasis: { focus: 'series', showSymbol: true },
+    emphasis: { disabled: true },
     lineStyle: { width: 2 },
-    data: visibleMonths.value.map((month) => selectedActivities.value.filter((row) => row.month === month && row.category === category).length),
+    data: visibleMonths.value.map((month) => selectedActivities.value.filter((row) => row.month === month && (selectedMetricCategory.value ? row.category === selectedMetricCategory.value && row.department === name : row.category === name)).length),
   })),
 }))
 
@@ -81,7 +123,14 @@ function resetFilters() {
   periodEnd.value = months.at(-1) ?? ''
   selectedLocation.value = '全部地点'
   selectedDepartment.value = '全部部门'
+  selectedChartDepartments.value = [...defaultChartDepartments]
+  draftChartDepartments.value = [...selectedChartDepartments.value]
+  showDepartmentPicker.value = false
 }
+watch(selectedDepartment, (department) => {
+  selectedChartDepartments.value = department === '全部部门' ? [...defaultChartDepartments] : [department]
+  draftChartDepartments.value = [...selectedChartDepartments.value]
+})
 watch([trendOption], async () => {
   await nextTick()
   updateChart()
@@ -129,8 +178,9 @@ onBeforeUnmount(() => {
           <div class="updated-at"><span class="live-dot"></span> 数据更新至 <strong>2026年10月</strong></div>
         </section>
 
-        <section class="filter-panel card">
-          <div class="filter-title"><span class="filter-symbol">☷</span><strong>筛选条件</strong></div>
+        <PanelCard class="filter-panel">
+          <template #logo><span class="filter-symbol">☷</span></template>
+          <template #title><strong>筛选条件</strong></template>
           <div class="filter-controls">
             <label class="filter-field"><span>开始月份</span><select v-model="periodStart"><option v-for="month in months" :key="month" :value="month">{{ formatMonth(month) }}</option></select></label>
             <span class="filter-dash">—</span>
@@ -139,22 +189,21 @@ onBeforeUnmount(() => {
             <label class="filter-field department-select"><span>所属部门</span><select v-model="selectedDepartment"><option v-for="department in departments" :key="department">{{ department }}</option></select></label>
             <button class="reset-button" @click="resetFilters">↻ <span>重置</span></button>
           </div>
-        </section>
+        </PanelCard>
 
         <section class="section-block">
           <div class="section-heading"><div><h2>异动概览</h2><span class="section-subtitle">{{ rangeLabel }} · 共 <b>{{ totalEvents.toLocaleString() }}</b> 条异动事件</span></div><button class="text-button" @click="showQuality = !showQuality">查看数据质量 <span>›</span></button></div>
           <div class="metric-grid">
-            <article v-for="(metric, index) in metricCards" :key="metric.category" class="metric-card card" :style="{ '--metric-color': metric.color }">
+            <button v-for="(metric, index) in metricCards" :key="metric.category" class="metric-card metric-card-button card" :class="{ selected: selectedMetricCategory === metric.category }" :style="{ '--metric-color': metric.color }" type="button" :aria-pressed="selectedMetricCategory === metric.category" @click="toggleMetric(metric.category)">
               <div class="metric-top"><span class="metric-label">{{ metric.category }}</span><span class="metric-icon">{{ metric.icon }}</span></div>
               <div class="metric-value">{{ metric.value.toLocaleString() }}<small>次</small></div>
-              <div class="metric-foot"><span class="metric-index">{{ String(index + 1).padStart(2, '0') }}</span><span>异动事件</span></div>
-            </article>
+            </button>
           </div>
         </section>
 
         <section class="section-block chart-section card">
-          <div class="card-heading"><div><h2>月度异动趋势</h2><p>按异动类别查看每月事件变化</p></div></div>
-          <div class="series-toggles" role="group" aria-label="控制趋势图折线显隐">
+          <div class="card-heading"><div><h2>{{ selectedMetricCategory ? `${selectedMetricCategory}部门月度趋势` : '月度异动趋势' }}</h2></div></div>
+          <div v-if="!selectedMetricCategory" class="series-toggles" role="group" aria-label="控制趋势图折线显隐">
             <button
               v-for="category in visibleCategories"
               :key="category"
@@ -171,7 +220,29 @@ onBeforeUnmount(() => {
               <svg v-else class="series-state" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8s2.2-4 6-4 6 4 6 4-2.2 4-6 4-6-4-6-4Z" /><circle cx="8" cy="8" r="1.7" /><path d="m3 13 10-10" /></svg>
             </button>
           </div>
-          <div ref="chartElement" class="trend-chart" role="img" aria-label="月度人员异动趋势折线图"></div>
+          <div v-else class="department-filter-row" aria-label="部门折线筛选">
+            <span class="department-filter-label">部门</span>
+            <span v-for="(department, index) in chartSeriesNames" :key="department" class="department-chip" :style="{ '--series-color': departmentColor(index) }">
+              <span class="series-dot" aria-hidden="true"></span><span>{{ department }}</span>
+              <button type="button" :aria-label="`移除${department}`" @click="toggleChartDepartment(department)">×</button>
+            </span>
+            <div class="department-picker-wrap">
+              <button class="department-picker-button" type="button" :aria-expanded="showDepartmentPicker" @click="showDepartmentPicker ? cancelDepartmentPicker() : openDepartmentPicker()">筛选部门 <span aria-hidden="true">⌄</span></button>
+              <div v-if="showDepartmentPicker" class="department-picker card">
+                <div class="department-picker-options">
+                  <label v-for="department in allDepartments" :key="department" class="department-option">
+                    <input type="checkbox" :checked="draftChartDepartments.includes(department)" @change="toggleDraftChartDepartment(department)">
+                    <span>{{ department }}</span>
+                  </label>
+                </div>
+                <div class="department-picker-actions">
+                  <button type="button" class="department-picker-cancel" @click="cancelDepartmentPicker">取消</button>
+                  <button type="button" class="department-picker-apply" @click="applyDepartmentPicker">应用筛选 <span>{{ draftChartDepartments.length }}</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ref="chartElement" class="trend-chart" role="img" :aria-label="selectedMetricCategory ? `${selectedMetricCategory}按部门月度趋势折线图` : '月度人员异动趋势折线图'"></div>
         </section>
 
         <section v-if="showQuality" class="quality-panel card">
