@@ -1,257 +1,452 @@
-<script setup lang="ts">
-import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import * as echarts from 'echarts/core'
-import { LineChart } from 'echarts/charts'
-import { GridComponent, TooltipComponent } from 'echarts/components'
-import { CanvasRenderer } from 'echarts/renderers'
-import type { EChartsType } from 'echarts/core'
-import data from './data/processed.json'
-import PanelCard from './components/PanelCard.vue'
-
-echarts.use([LineChart, GridComponent, TooltipComponent, CanvasRenderer])
-
-type Activity = { month: string; category: string; location: string; department: string }
-const categories = data.categories as string[]
-const hiddenCategories = new Set(['满3个月', '签订合同', '签劳动合同', '满3个月/签订合同'])
-const visibleCategories = categories.filter((category) => !hiddenCategories.has(category))
-const allActivities = data.activity as Activity[]
-const months = data.months as string[]
-const transferStats = data.transferStats
-const periodStart = ref(months.length > 12 ? months[months.length - 12] : months[0])
-const periodEnd = ref(months.at(-1) ?? '')
-const selectedLocation = ref('全部地点')
-const selectedDepartment = ref('全部部门')
-const allDepartments = [...new Set(allActivities.map((row) => row.department).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'zh-CN'))
-const defaultChartDepartments = allDepartments.filter((department) => department !== '/').slice(0, 5)
-const selectedChartDepartments = ref([...defaultChartDepartments])
-const draftChartDepartments = ref([...selectedChartDepartments.value])
-const showDepartmentPicker = ref(false)
-const selectedSeries = ref([...visibleCategories])
-const selectedMetricCategory = ref<string | null>(null)
-const chartElement = ref<HTMLDivElement | null>(null)
-const showQuality = ref(false)
-let chart: EChartsType | null = null
-let resizeObserver: ResizeObserver | null = null
-
-const locations = computed(() => ['全部地点', ...new Set(allActivities.map((row) => row.location).filter(Boolean).sort())])
-const departments = computed(() => ['全部部门', ...allDepartments])
-const selectedActivities = computed(() => allActivities.filter((row) =>
-  row.month >= periodStart.value && row.month <= periodEnd.value &&
-  visibleCategories.includes(row.category) &&
-  (selectedLocation.value === '全部地点' || row.location === selectedLocation.value) &&
-  (selectedDepartment.value === '全部部门' || row.department === selectedDepartment.value),
-))
-const metricCards = computed(() => visibleCategories.map((category, index) => ({
-  category,
-  value: selectedActivities.value.filter((row) => row.category === category).length,
-  color: ['#356df3', '#f27668', '#17a98c', '#f1a440'][index],
-  icon: ['↗', '↘', '✓', '◈'][index],
-})))
-const totalEvents = computed(() => selectedActivities.value.length)
-const visibleMonths = computed(() => months.filter((month) => month >= periodStart.value && month <= periodEnd.value))
-const isSeriesSelected = (category: string) => selectedSeries.value.includes(category)
-function toggleSeries(category: string) {
-  selectedSeries.value = isSeriesSelected(category)
-    ? selectedSeries.value.filter((item) => item !== category)
-    : visibleCategories.filter((item) => selectedSeries.value.includes(item) || item === category)
-}
-function toggleMetric(category: string) {
-  selectedMetricCategory.value = selectedMetricCategory.value === category ? null : category
-}
-function toggleChartDepartment(department: string) {
-  const isSelected = selectedChartDepartments.value.includes(department)
-  selectedChartDepartments.value = isSelected
-    ? selectedChartDepartments.value.filter((item) => item !== department)
-    : allDepartments.filter((item) => selectedChartDepartments.value.includes(item) || item === department)
-  draftChartDepartments.value = isSelected
-    ? draftChartDepartments.value.filter((item) => item !== department)
-    : allDepartments.filter((item) => draftChartDepartments.value.includes(item) || item === department)
-}
-function toggleDraftChartDepartment(department: string) {
-  draftChartDepartments.value = draftChartDepartments.value.includes(department)
-    ? draftChartDepartments.value.filter((item) => item !== department)
-    : allDepartments.filter((item) => draftChartDepartments.value.includes(item) || item === department)
-}
-function openDepartmentPicker() {
-  draftChartDepartments.value = [...selectedChartDepartments.value]
-  showDepartmentPicker.value = true
-}
-function cancelDepartmentPicker() {
-  draftChartDepartments.value = [...selectedChartDepartments.value]
-  showDepartmentPicker.value = false
-}
-function applyDepartmentPicker() {
-  selectedChartDepartments.value = [...draftChartDepartments.value]
-  showDepartmentPicker.value = false
-}
-function departmentColor(index: number) {
-  return `hsl(${Math.round((index * 137.508) % 360)} 62% 47%)`
-}
-const chartSeriesNames = computed(() => selectedMetricCategory.value
-  ? allDepartments.filter((department) => selectedChartDepartments.value.includes(department))
-  : visibleCategories.filter(isSeriesSelected))
-const trendOption = computed(() => ({
-  animationDuration: 500,
-  color: selectedMetricCategory.value ? chartSeriesNames.value.map((_, index) => departmentColor(index)) : ['#356df3', '#ef766a', '#17a98c', '#f1a440'],
-  tooltip: { trigger: 'axis', backgroundColor: '#fff', borderColor: '#e6eaf1', textStyle: { color: '#27344a' }, valueFormatter: (value: number) => `${value} 次` },
-  legend: { show: false },
-  grid: { left: 36, right: 18, top: 18, bottom: 28 },
-  xAxis: { type: 'category', boundaryGap: false, data: visibleMonths.value.map((month) => `${month.slice(0, 4)}-${month.slice(4)}`), axisLine: { lineStyle: { color: '#e9edf4' } }, axisTick: { show: false }, axisLabel: { color: '#8993a4', fontSize: 10, hideOverlap: true } },
-  yAxis: { type: 'value', minInterval: 1, splitLine: { lineStyle: { color: '#edf0f5', type: 'dashed' } }, axisLabel: { color: '#98a1af', fontSize: 10 } },
-  series: chartSeriesNames.value.map((name) => ({
-    name,
-    type: 'line',
-    smooth: 0.25,
-    showSymbol: false,
-    symbolSize: 6,
-    emphasis: { disabled: true },
-    lineStyle: { width: 2 },
-    data: visibleMonths.value.map((month) => selectedActivities.value.filter((row) => row.month === month && (selectedMetricCategory.value ? row.category === selectedMetricCategory.value && row.department === name : row.category === name)).length),
-  })),
-}))
-
-const rangeLabel = computed(() => `${periodStart.value.slice(0, 4)}.${periodStart.value.slice(4)} — ${periodEnd.value.slice(0, 4)}.${periodEnd.value.slice(4)}`)
-
-function formatMonth(month: string) {
-  return `${month.slice(0, 4)}-${month.slice(4)}`
-}
-function updateChart() {
-  if (chart && !chart.isDisposed()) chart.setOption(trendOption.value, true)
-}
-function resetFilters() {
-  periodStart.value = months.length > 12 ? months[months.length - 12] : months[0]
-  periodEnd.value = months.at(-1) ?? ''
-  selectedLocation.value = '全部地点'
-  selectedDepartment.value = '全部部门'
-  selectedChartDepartments.value = [...defaultChartDepartments]
-  draftChartDepartments.value = [...selectedChartDepartments.value]
-  showDepartmentPicker.value = false
-}
-watch(selectedDepartment, (department) => {
-  selectedChartDepartments.value = department === '全部部门' ? [...defaultChartDepartments] : [department]
-  draftChartDepartments.value = [...selectedChartDepartments.value]
-})
-watch([trendOption], async () => {
-  await nextTick()
-  updateChart()
-})
-onMounted(async () => {
-  await nextTick()
-  if (chartElement.value) {
-    chart = echarts.init(chartElement.value)
-    updateChart()
-    resizeObserver = new ResizeObserver(() => chart?.resize())
-    resizeObserver.observe(chartElement.value)
-  }
-})
-onBeforeUnmount(() => {
-  resizeObserver?.disconnect()
-  chart?.dispose()
-})
-</script>
-
 <template>
+  <!-- 月度人员异动页面，组合筛选、概览、趋势和数据质量组件。 -->
   <div class="app-shell">
-    <aside class="sidebar">
-      <div class="brand"><div class="brand-mark"><span></span><span></span><span></span></div><div><strong>PeopleCompass</strong><small>人力数据分析平台</small></div></div>
-      <div class="nav-caption">工作台</div>
-      <nav class="main-nav" aria-label="主导航">
-        <a class="nav-item" href="#" @click.prevent><span class="nav-icon">⌂</span>数据总览</a>
-        <a class="nav-item" href="#" @click.prevent><span class="nav-icon">♙</span>人员分析</a>
-        <a class="nav-item active" href="#" aria-current="page" @click.prevent><span class="nav-icon">⇄</span>月度人员异动</a>
-        <a class="nav-item disabled" href="#" @click.prevent><span class="nav-icon">▦</span>组织分析 <em>规划中</em></a>
-        <a class="nav-item disabled" href="#" @click.prevent><span class="nav-icon">⌕</span>招聘分析 <em>规划中</em></a>
-        <a class="nav-item disabled" href="#" @click.prevent><span class="nav-icon">↘</span>离职分析 <em>规划中</em></a>
-      </nav>
-      <div class="sidebar-footer"><div class="footer-avatar">HR</div><div class="footer-profile"><strong>人力资源部</strong><small>数据分析工作区</small></div><span class="footer-dots">•••</span></div>
-    </aside>
+    <WorkspaceSidebar />
 
     <main class="main-content">
       <header class="topbar">
         <div class="breadcrumbs"><span>数据分析</span><b>/</b><strong>月度人员异动</strong></div>
-        <div class="topbar-right"><span class="source-pill"><i></i>Excel 数据源</span><button class="icon-button" aria-label="数据说明" @click="showQuality = !showQuality">ⓘ</button><div class="top-avatar">PC</div></div>
+        <div class="topbar-right">
+          <span class="source-pill"><i></i>Excel 数据源</span>
+          <button class="icon-button" aria-label="数据说明" @click="toggleQuality">ⓘ</button>
+          <div class="top-avatar">PC</div>
+        </div>
       </header>
 
       <div class="page-content">
         <section class="page-heading">
-          <div><div class="eyebrow">PEOPLE MOVEMENT</div><h1>月度人员异动</h1><p>追踪人员异动趋势，洞察组织变化。</p></div>
+          <div>
+            <div class="eyebrow">PEOPLE MOVEMENT</div>
+            <h1>月度人员异动</h1>
+          </div>
           <div class="updated-at"><span class="live-dot"></span> 数据更新至 <strong>2026年10月</strong></div>
         </section>
 
-        <PanelCard class="filter-panel">
-          <template #logo><span class="filter-symbol">☷</span></template>
-          <template #title><strong>筛选条件</strong></template>
-          <div class="filter-controls">
-            <label class="filter-field"><span>开始月份</span><select v-model="periodStart"><option v-for="month in months" :key="month" :value="month">{{ formatMonth(month) }}</option></select></label>
-            <span class="filter-dash">—</span>
-            <label class="filter-field"><span>结束月份</span><select v-model="periodEnd"><option v-for="month in months" :key="month" :value="month">{{ formatMonth(month) }}</option></select></label>
-            <label class="filter-field"><span>办公地点</span><select v-model="selectedLocation"><option v-for="location in locations" :key="location">{{ location }}</option></select></label>
-            <label class="filter-field department-select"><span>所属部门</span><select v-model="selectedDepartment"><option v-for="department in departments" :key="department">{{ department }}</option></select></label>
-            <button class="reset-button" @click="resetFilters">↻ <span>重置</span></button>
-          </div>
-        </PanelCard>
+        <MovementFilters
+          v-model:start="periodStart"
+          v-model:end="periodEnd"
+          v-model:location="selectedLocation"
+          v-model:department="selectedDepartment"
+          :months="months"
+          :locations="locationOptions"
+          :departments="departmentOptions"
+          @reset="resetFilters"
+        />
 
-        <section class="section-block">
-          <div class="section-heading"><div><h2>异动概览</h2><span class="section-subtitle">{{ rangeLabel }} · 共 <b>{{ totalEvents.toLocaleString() }}</b> 条异动事件</span></div><button class="text-button" @click="showQuality = !showQuality">查看数据质量 <span>›</span></button></div>
-          <div class="metric-grid">
-            <button v-for="(metric, index) in metricCards" :key="metric.category" class="metric-card metric-card-button card" :class="{ selected: selectedMetricCategory === metric.category }" :style="{ '--metric-color': metric.color }" type="button" :aria-pressed="selectedMetricCategory === metric.category" @click="toggleMetric(metric.category)">
-              <div class="metric-top"><span class="metric-label">{{ metric.category }}</span><span class="metric-icon">{{ metric.icon }}</span></div>
-              <div class="metric-value">{{ metric.value.toLocaleString() }}<small>次</small></div>
-            </button>
-          </div>
-        </section>
+        <MovementOverview
+          :range-label="rangeLabel"
+          :total="selectedActivities.length"
+          :metrics="metrics"
+          :selected-category="selectedCategory"
+          @select-category="toggleCategory"
+          @toggle-quality="toggleQuality"
+        />
 
-        <section class="section-block chart-section card">
-          <div class="card-heading"><div><h2>{{ selectedMetricCategory ? `${selectedMetricCategory}部门月度趋势` : '月度异动趋势' }}</h2></div></div>
-          <div v-if="!selectedMetricCategory" class="series-toggles" role="group" aria-label="控制趋势图折线显隐">
-            <button
-              v-for="category in visibleCategories"
-              :key="category"
-              class="series-toggle"
-              :class="{ active: isSeriesSelected(category) }"
-              :style="{ '--series-color': ['#356df3', '#f27668', '#17a98c', '#f1a440'][visibleCategories.indexOf(category)] }"
-              type="button"
-              :aria-pressed="isSeriesSelected(category)"
-              @click="toggleSeries(category)"
-            >
-              <span class="series-dot" aria-hidden="true"></span>
-              <span>{{ category }}</span>
-              <svg v-if="isSeriesSelected(category)" class="series-state" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3.2 3.2L13 4.5" /></svg>
-              <svg v-else class="series-state" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8s2.2-4 6-4 6 4 6 4-2.2 4-6 4-6-4-6-4Z" /><circle cx="8" cy="8" r="1.7" /><path d="m3 13 10-10" /></svg>
-            </button>
-          </div>
-          <div v-else class="department-filter-row" aria-label="部门折线筛选">
-            <span class="department-filter-label">部门</span>
-            <span v-for="(department, index) in chartSeriesNames" :key="department" class="department-chip" :style="{ '--series-color': departmentColor(index) }">
-              <span class="series-dot" aria-hidden="true"></span><span>{{ department }}</span>
-              <button type="button" :aria-label="`移除${department}`" @click="toggleChartDepartment(department)">×</button>
-            </span>
-            <div class="department-picker-wrap">
-              <button class="department-picker-button" type="button" :aria-expanded="showDepartmentPicker" @click="showDepartmentPicker ? cancelDepartmentPicker() : openDepartmentPicker()">筛选部门 <span aria-hidden="true">⌄</span></button>
-              <div v-if="showDepartmentPicker" class="department-picker card">
-                <div class="department-picker-options">
-                  <label v-for="department in allDepartments" :key="department" class="department-option">
-                    <input type="checkbox" :checked="draftChartDepartments.includes(department)" @change="toggleDraftChartDepartment(department)">
-                    <span>{{ department }}</span>
-                  </label>
-                </div>
-                <div class="department-picker-actions">
-                  <button type="button" class="department-picker-cancel" @click="cancelDepartmentPicker">取消</button>
-                  <button type="button" class="department-picker-apply" @click="applyDepartmentPicker">应用筛选 <span>{{ draftChartDepartments.length }}</span></button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div ref="chartElement" class="trend-chart" role="img" :aria-label="selectedMetricCategory ? `${selectedMetricCategory}按部门月度趋势折线图` : '月度人员异动趋势折线图'"></div>
-        </section>
+        <MovementTrend
+          :months="visibleMonths"
+          :series="trendSeries"
+          :category-controls="categoryControls"
+          :departments="departments"
+          :department="selectedDepartment"
+          :selected-category="selectedCategory"
+          :reset-key="filterResetKey"
+        />
 
-        <section v-if="showQuality" class="quality-panel card">
-          <div class="card-heading"><div><h2>数据质量与口径</h2><p>来源：每月人员异动表202610.xlsx · 入转离 / 调动</p></div><button class="close-button" aria-label="关闭" @click="showQuality = false">×</button></div>
-          <div class="quality-grid"><div><span>入转离记录</span><strong>{{ allActivities.length }} 条</strong></div><div><span>调动记录</span><strong>{{ transferStats.total }} 条</strong></div><div><span>历史范围</span><strong>{{ formatMonth(months[0]) }} 至 {{ formatMonth(months.at(-1) ?? '') }} · {{ months.length }} 个月</strong></div><div><span>部门间流动</span><strong>{{ transferStats.departmentFlows }} 条</strong></div><div><span>换签（单独统计）</span><strong>{{ transferStats.swaps }} 条</strong></div><div><span>名称和具体日期</span><strong>页面数据未保留</strong></div></div>
-          <p class="quality-rule">类别已去除首尾空格；仅月份、类别向下填充。部门流动排除换签、已离职及原部门与现部门相同的记录。异动数量按事件记录统计，不代表去重员工人数。地点筛选无法作用于未包含地点字段的调动工作表。</p>
-        </section>
+        <MovementDataQuality
+          v-if="showQuality"
+          :activity-count="activity.length"
+          :months="months"
+          :transfers="transferStats"
+          @close="showQuality = false"
+        />
         <footer class="page-footer">PeopleCompass 人力数据分析 <span>·</span> 数据仅用于内部分析</footer>
       </div>
     </main>
   </div>
 </template>
+
+<script setup lang="ts">
+import { computed, ref } from 'vue'
+import MovementDataQuality from './components/MovementDataQuality.vue'
+import MovementFilters from './components/MovementFilters.vue'
+import MovementOverview from './components/MovementOverview.vue'
+import MovementTrend from './components/MovementTrend.vue'
+import WorkspaceSidebar from './components/WorkspaceSidebar.vue'
+import { movementData } from './data/movement-data'
+import type { Activity } from './data/movement-data'
+import {
+  allDepartmentsLabel,
+  allLocationsLabel,
+  countByCategory,
+  filterActivities,
+  formatMonth,
+  getVisibleCategories,
+  summarizeTrend,
+} from './movement-statistics'
+import type { TrendSeries } from './movement-statistics'
+
+const { activity, categories, months, transferStats } = movementData
+const visibleCategories = getVisibleCategories(categories)
+const departments = [...new Set(activity.map(
+  /**
+   * 读取异动事件所属部门，用于生成部门筛选项。
+   * @param {Activity} row 异动事件。
+   * @returns {string} 部门名称。
+   */
+  (row) => row.department,
+).filter(Boolean))]
+  .sort(
+    /**
+     * 按中文名称排列部门筛选项。
+     * @param {string} a 前一个部门名称。
+     * @param {string} b 后一个部门名称。
+     * @returns {number} 排序比较结果。
+     */
+    (a, b) => a.localeCompare(b, 'zh-CN'),
+  )
+const departmentOptions = [allDepartmentsLabel, ...departments]
+const locationOptions = [allLocationsLabel, ...new Set(activity.map(
+  /**
+   * 读取异动事件的办公地点，用于生成地点筛选项。
+   * @param {Activity} row 异动事件。
+   * @returns {string} 办公地点。
+   */
+  (row) => row.location,
+).filter(Boolean).sort())]
+const defaultStart = months[Math.max(0, months.length - 12)]
+const defaultEnd = months.at(-1) ?? ''
+
+const periodStart = ref(defaultStart)
+const periodEnd = ref(defaultEnd)
+const selectedLocation = ref(allLocationsLabel)
+const selectedDepartment = ref(allDepartmentsLabel)
+const selectedCategory = ref<string | null>(null)
+const showQuality = ref(false)
+const filterResetKey = ref(0)
+
+const categoryColors = ['#356df3', '#f27668', '#17a98c', '#f1a440']
+const categoryIcons = ['↗', '↘', '✓', '◈']
+const categoryControls = visibleCategories.map(
+  /**
+   * 为可见类别匹配指标卡颜色。
+   * @param {string} name 异动类别。
+   * @param {number} index 类别在展示列表中的位置。
+   * @returns {{name: string, color: string}} 类别与颜色配置。
+   */
+  (name, index) => ({
+    name,
+    color: categoryColors[index],
+  }),
+)
+
+const selectedActivities = computed(
+  /**
+   * 根据当前筛选状态计算页面展示的异动事件。
+   * @returns {Activity[]} 筛选后的异动事件。
+   */
+  () => filterActivities(activity, visibleCategories, {
+    start: periodStart.value,
+    end: periodEnd.value,
+    location: selectedLocation.value,
+    department: selectedDepartment.value,
+  }),
+)
+const visibleMonths = computed(
+  /**
+   * 计算当前时间区间内需要展示的月份。
+   * @returns {string[]} 展示月份。
+   */
+  () => months.filter(
+    /**
+     * 判断月份是否位于选定区间内。
+     * @param {string} month 候选月份。
+     * @returns {boolean} 是否展示该月份。
+     */
+    (month) => month >= periodStart.value && month <= periodEnd.value,
+  ),
+)
+const rangeLabel = computed(
+  /**
+   * 生成人员异动概览中的月份区间文本。
+   * @returns {string} 格式化的区间标签。
+   */
+  () => `${formatMonth(periodStart.value, '.')} — ${formatMonth(periodEnd.value, '.')}`,
+)
+const metrics = computed(
+  /**
+   * 根据筛选后的事件计算分类指标卡数据。
+   * @returns {Array<{name: string, color: string, icon: string, value: number}>} 指标卡内容。
+   */
+  () => {
+    const counts = countByCategory(selectedActivities.value)
+    return categoryControls.map(
+      /**
+       * 将一个类别的计数和展示配置合并为指标卡。
+       * @param {{name: string, color: string}} control 类别展示配置。
+       * @param {number} index 类别在指标卡中的位置。
+       * @returns {{name: string, color: string, icon: string, value: number}} 指标卡数据。
+       */
+      ({ name, color }, index) => ({
+        name,
+        color,
+        icon: categoryIcons[index],
+        value: counts.get(name) ?? 0,
+      }),
+    )
+  },
+)
+const trendSeries = computed(
+  /**
+   * 根据当前类别和月份生成趋势图序列。
+   * @returns {TrendSeries[]} 趋势图数据。
+   */
+  () => summarizeTrend(
+    selectedActivities.value,
+    visibleMonths.value,
+    selectedCategory.value === null ? visibleCategories : departments,
+    selectedCategory.value,
+  ),
+)
+
+/**
+ * 切换类别指标卡的选中状态。
+ * @param {string} category 用户选择的异动类别。
+ */
+function toggleCategory(category: string) {
+  selectedCategory.value = selectedCategory.value === category ? null : category
+}
+
+/** 切换数据质量说明面板的显示状态。 */
+function toggleQuality() {
+  showQuality.value = !showQuality.value
+}
+
+/** 将筛选条件恢复为默认区间和全部地点、部门。 */
+function resetFilters() {
+  periodStart.value = defaultStart
+  periodEnd.value = defaultEnd
+  selectedLocation.value = allLocationsLabel
+  selectedDepartment.value = allDepartmentsLabel
+  filterResetKey.value += 1
+}
+</script>
+
+<style scoped>
+.app-shell {
+  min-height: 100vh;
+  --sidebar-width: 298px;
+}
+
+.top-avatar {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: 700;
+  background: #f0eafd;
+  color: #8264bf;
+  width: 34px;
+  height: 34px;
+  font-size: 12px;
+}
+
+.main-content {
+  min-height: 100vh;
+  margin-left: var(--sidebar-width);
+}
+
+.topbar {
+  border-bottom: 1px solid #eaedf3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+  padding: 0 42px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: rgba(255, 255, 255, .94);
+  backdrop-filter: blur(12px);
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  color: #9aa4b2;
+  font-size: 13px;
+  gap: 14px;
+}
+
+.breadcrumbs b {
+  font-weight: 400;
+  color: #c4cbd5;
+}
+
+.breadcrumbs strong {
+  color: #42516a;
+  font-weight: 600;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.source-pill {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #e8edf2;
+  border-radius: 18px;
+  color: #748198;
+  background: #fff;
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+.source-pill i,
+.live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1bb489;
+  box-shadow: 0 0 0 3px #e7f7f1;
+}
+
+.icon-button {
+  border: 0;
+  background: none;
+  color: #8b96a8;
+  font-size: 15px;
+}
+
+.page-content {
+  margin: 0 auto;
+  padding: 38px 42px 28px;
+}
+
+.page-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  font-weight: 700;
+  letter-spacing: .16em;
+  color: #95a4bd;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+
+.page-heading h1 {
+  margin: 0;
+  line-height: 1.35;
+  color: #26354c;
+  font-size: 30px;
+  letter-spacing: -.65px;
+}
+
+.page-heading p {
+  color: #8c97a8;
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+
+.updated-at {
+  display: flex;
+  align-items: center;
+  color: #8e99aa;
+  padding-bottom: 3px;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.updated-at strong {
+  color: #66758c;
+  font-weight: 600;
+}
+
+.page-footer {
+  text-align: center;
+  color: #afb7c3;
+  font-size: 11px;
+  padding: 13px 0 3px;
+}
+
+.page-footer span {
+  margin: 0 4px;
+}
+
+@media (max-width: 1200px) {
+  .app-shell {
+    --sidebar-width: 250px;
+  }
+
+  .topbar {
+    padding: 0 30px;
+  }
+
+  .page-content {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .app-shell {
+    --sidebar-width: 220px;
+  }
+
+  .topbar {
+    height: 66px;
+    padding: 0 24px;
+  }
+
+  .page-content {
+    padding: 26px 24px;
+  }
+
+  .page-heading h1 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    --sidebar-width: 62px;
+  }
+
+  .topbar {
+    height: 54px;
+    padding: 0 14px;
+  }
+
+  .source-pill {
+    display: none;
+  }
+
+  .page-content {
+    padding: 20px 14px;
+  }
+
+  .page-heading {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .page-heading h1 {
+    font-size: 22px;
+  }
+
+  .page-heading p {
+    font-size: 12px;
+  }
+
+  .updated-at {
+    font-size: 9px;
+    white-space: nowrap;
+    gap: 5px;
+  }
+}
+</style>
